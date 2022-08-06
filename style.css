@@ -1,0 +1,192 @@
+:root{
+  --svart: rgb(26, 26, 26);
+  --radie: 10px;
+}
+
+body{
+  margin:0;
+  background-attachment: fixed;
+  height:100%;
+  background: #f2f1ed;
+  font-family: 'Kosugi Maru', sans-serif;
+  overflow-x:hidden;
+}
+
+.button{
+  font-family: 'Kosugi Maru', sans-serif;
+  color: var(--svart);
+  border: 1px solid black;
+  height: 40px;
+  border-radius:var(--radie);
+  background-color: #ffffff44;
+  cursor:pointer;
+  margin:auto;
+}
+.button:active{
+  background-color: #ffffffaa;
+}
+
+/*------------*/
+/*TOPBOX
+/*------------*/
+
+.topbox{
+  display:flex;
+  height:80px;
+  top:0;
+  width:100%;
+  position:fixed;
+  text-align: center;
+
+  background: transparent;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #f2f1ed 100%);
+}
+
+h1{
+  display:block;
+  position: relative;
+
+  font-family: 'Kosugi Maru', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: var(--svart);
+  height:auto;
+  margin:auto;
+}
+
+.collapsible{
+  font-family: 'Kosugi Maru', sans-serif;
+  text-align: right;
+  color: var(--svart);
+  position: absolute;
+  right:15px;
+  top: 50%;
+
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  min-width:100px;
+  width:auto;
+  padding:7px;
+  height:50px;
+  background-color:#ffffff44;
+  border-radius:var(--radie);
+  border: 1px dashed var(--svart);
+  transition:0.2s;
+  cursor:pointer;
+}
+
+#avatar{
+  display:inline-block; 
+  position:absolute;
+  margin:0;
+  left: 7px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 30px;
+  width:30px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+#username{
+  font-size: 15px;
+  margin:5px;
+  margin-top:auto;
+  margin-bottom:auto;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.meny{
+  display:none;
+  width: inherit;
+}
+.menygrej{
+  width:inherit;
+  color: var(--svart);
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  cursor:pointer;
+}
+
+/*------------*/
+/*BOTTOMBOX
+/*------------*/
+
+#bottombox{
+  width:100%;
+  height:50px;
+  max-height:100px;
+
+  position:fixed;
+  
+  bottom:0;
+  right:0;
+  left:0;
+  padding-left:10px;
+  padding-right: 10px;
+
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap-reverse;
+  justify-content: center;
+  gap:7px;
+}
+
+.msgbox{
+  font-family: 'Kosugi Maru', sans-serif;
+  color: var(--svart);
+  caret-color:var(--svart);
+  text-indent: 7px;
+
+  height: 38.4px;
+
+  border: 1px dashed var(--svart);
+  border-radius:var(--radie);
+  background-color: #ffffff44;
+  padding: 0;
+  margin:auto;
+
+  transition: 0.1s;
+
+  flex-grow:8;
+  
+}
+
+.msgbox:focus{
+  background-color: #ffffffaa;
+  outline:none;
+}
+#submit{
+  flex-grow:1;
+}
+#media{
+  flex-basis: 40px;
+}
+
+/*------------*/
+/*MEDDELANDEN
+/*------------*/
+
+#sealer{
+  height: 100px;
+  width:auto;
+  display: flex;
+}
+#eggman{
+  height: 100px;
+  width:auto;
+  display: flex;
+}
+#result{
+  margin:10px;
+  margin-bottom: 55px;
+}
+#text:hover{
+  background-color: #ffffffaa;
+}
+
