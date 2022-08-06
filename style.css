@@ -16,7 +16,7 @@ body{
   font-family: 'Kosugi Maru', sans-serif;
   color: var(--svart);
   border: 1px solid black;
-  height: 40px;
+  height: 35px;
   border-radius:var(--radie);
   background-color: #ffffff44;
   cursor:pointer;
